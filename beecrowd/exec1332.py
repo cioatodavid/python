@@ -1,21 +1,10 @@
 n = int(input())
 
-l1 = ['o', 'n', 'e']
-l2 = ['t', 'w', 'o']
-note1 = 0
-note2 = 0
-
 for i in range(n):
-    word = input()
-    if len(word) == 3:
-        for j in range(3):
-            if word[j] in l1[j]:
-                note1 += 1
-            if word[j] in l2[j]:
-                note2 += 1
-        if note1 > note2:
-            print(1)
-        else:
-            print(2)
-    elif len(word) == 5:
+    word = str(input())
+    if len(word) == 5:
         print(3)
+    elif (word[0] == 't' and word[1] == 'w') or (word[0] == 't' and word[2] == 'o') or (word[1] == 'w' and word[2] == 'o'):
+        print(2)
+    else:
+        print(1)
