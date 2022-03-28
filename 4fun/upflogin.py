@@ -8,7 +8,7 @@ requests.packages.urllib3.util.ssl_.DEFAULT_CIPHERS += ':HIGH:!DH:!aNULL'
 try:
     requests.packages.urllib3.contrib.pyopenssl.util.ssl_.DEFAULT_CIPHERS += ':HIGH:!DH:!aNULL'
 except AttributeError:
-    print('ERRO DE SSL')
+    print('SSL')
     pass
 user = str(input('Usuário: '))
 password = str(input('Senha: '))
