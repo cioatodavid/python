@@ -1,6 +1,6 @@
-4fun
-Include
-Lib
-__pycache__
-.vscode
-Scripts
+4fun/
+Include/
+Lib/
+__pycache__/
+.vscode/
+Scripts/
