@@ -10,13 +10,12 @@ def playagain():
         values.append(int(input()))
 
     jump = int(input())
-  
 
     nvalue = invertlist(values)
 
     for j in range(0, num, jump):
         finalvalue += nvalue[j]
-    
+
     print(finalvalue)
     return finalvalue
 
@@ -24,11 +23,11 @@ def playagain():
 win = False
 while win == False:
     try:
-       
+
         final = playagain()
         if final % 2 == 0:
             print("Bad boy! I’ll hit you.")
-        elif final %2 != 0:
+        elif final % 2 != 0:
             print('''You’re a coastal aircraft, Robbie, a large silver aircraft.''')
             win = True
     except EOFError:
