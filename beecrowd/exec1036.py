@@ -16,5 +16,5 @@ temp = bhaskara(a, b, c)
 if temp == 'Impossivel calcular':
     print(temp)
 else:
-    print("R1 = {:.5f}".format(temp[0]))
-    print("R2 = {:.5f}".format(temp[1]))
+    print("R1 = {:.1f}".format(temp[0]))
+    print("R2 = {:.1f}".format(temp[1]))
